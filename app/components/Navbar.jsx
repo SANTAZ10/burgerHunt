@@ -1,21 +1,39 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
+  const [navBg, setNavBg] = useState(false)
 
   const currentYear = new Date().getFullYear();
+
 
   const handleNav = () => {
     setNav(!nav);
   };
+
+  useEffect(() => {
+    const handleNavBg = () => {
+      if (window.scrollY >= 90) {
+        setNavBg(true);
+      } else {
+        setNavBg(false);
+      }
+    };
+    window.addEventListener("scroll", handleNavBg);
+
+    return () => {
+      window.removeEventListener("scroll", handleNavBg);
+    };
+  });
+
   return (
-    <div className=" w-full h-auto flex text-white items-center justify-center bg-transparent">
-      <div className="flex justify-between items-center w-[1240px] h-auto p-4 md:px-16">
+    <div className={navBg ? " fixed z-40 w-full h-auto flex text-white items-center justify-center bg-gray-800" : " fixed z-40 w-full h-auto flex text-white items-center justify-center bg-transparent"} style={{ backgroundColor: `${navBg}` }}>
+      <div className="  flex justify-between items-center w-full h-auto px-4 py-2 md:px-16">
         <Link href="/" className=" flex gap-[10px] items-center justify-center">
           <svg
             width="40"
@@ -71,7 +89,7 @@ export default function Navbar() {
       <div
         className={
           nav
-            ? "md:hidden w-full h-screen fixed top-0 left-0 bg-gray-700/90"
+            ? "md:hidden w-full h-screen fixed top-0 left-0 bg-gray-700/100"
             : ""
         }
       >

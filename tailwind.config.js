@@ -10,7 +10,8 @@ module.exports = {
         fontFamily:{
           Inter: ['Inter'],
           Crimson: ['Crimson Text'],
-          Playfair: ['Playfair Display']
+          Playfair: ['Playfair Display'],
+          Roboto: ['Roboto']
         }
     },
   },
