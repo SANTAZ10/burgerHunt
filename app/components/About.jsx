@@ -31,8 +31,8 @@ export default function About() {
     },
   ];
   return (
-    <div className="m-0">
-      <div className=" w-full flex flex-col items-center justify-center my-24 pb-12">
+    <div className="m-0 ">
+      <div className=" w-full flex flex-col items-center justify-center mt-16 pb-12">
         <div className="flex flex-col items-center justify-center gap-[0.7rem] md:12 md:mb-16">
           <h1 className="font-Playfair leading-normal text-2xl md:text-[2.5rem] font-medium">
             The Perfect Offer For You
@@ -68,11 +68,11 @@ export default function About() {
         </div>
       </div>
 
-      <div className=" flex flex-col gap-12 items-center justify-center">
-        <div className="">
-          <h1>Our Awesome Restaurant</h1>
-          <h2>DISCOVER OUR STORY &mdash;</h2>
-          <p>
+      <div className=" flex flex-col sm:flex-row sm:p-[2rem] md:p-[1.5rem]  gap-12 items-center justify-center pb-8 bg-[#f1f1f1e6]">
+        <div className="flex flex-col gap-7 p-6 items-start sm:w-[40%]">
+          <h1 className="font-Playfair leading-normal font-medium text-2xl sm:text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] text-gray-900">Our Awesome Restaurant</h1>
+          <h2 className="font-Inter text-base  md:text-[1.1rem] text-orange-500 leading-[0.06px] font-medium">DISCOVER OUR STORY &mdash;</h2>
+          <p className="w-[90%]  font-Roboto text-sm sm:text-xs md:text-sm leading-normal font-medium text-gray-800">
             Lorem ipsum dolor sit amet consectetur. Vulputate morbi etiam
             fringilla interdum integer. Convallis viverra sed erat quis felis
             ac. At velit a at fames convallis elementum pharetra volutpat eget.
@@ -82,9 +82,9 @@ export default function About() {
           <div className="flex items-center justify-center">
             <Link
               href="/"
-              className="mt-[65px] flex justify-start items-start bg-transparent border border-gray-900  hover:border-white hover:text-orange-500 px-[30px] py-[10px]"
+              className="mt-[3rem] flex justify-start items-start bg-transparent border hover:border-none text-gray-900 border-gray-900  hover:bg-orange-500 hover:text-white px-[30px] py-[10px]"
             >
-              <h3 className="text-gray-900">READ MORE</h3>
+              <h3 className=" font-Inter text-sm font-medium leading-normal">READ MORE</h3>
             </Link>
           </div>
         </div>
