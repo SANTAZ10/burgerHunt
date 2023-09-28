@@ -68,7 +68,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className=" flex flex-col sm:flex-row sm:p-[2rem] md:p-[1.5rem]  gap-12 items-center justify-center pb-8 bg-[#f1f1f1e6]">
+      <div className=" flex flex-col sm:flex-row sm:p-[2rem]  gap-12 items-center justify-center py-[5rem] md:py-[11rem] bg-[#f1f1f1e6]">
         <div className="flex flex-col gap-7 p-6 items-start sm:w-[40%]">
           <h1 className="font-Playfair leading-normal font-medium text-2xl sm:text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] text-gray-900">Our Awesome Restaurant</h1>
           <h2 className="font-Inter text-base  md:text-[1.1rem] text-orange-500 leading-[0.06px] font-medium">DISCOVER OUR STORY &mdash;</h2>
