@@ -14,6 +14,9 @@ module.exports = {
           Roboto: ['Roboto']
         }
     },
+    boxShadow: {
+        'customShadow': '-1px -1px 2px rgba(0, 0, 0, 0.15), 3px 3px 10px rgba(0, 0, 0, 0.28)',
+      }
   },
   plugins: [],
 }

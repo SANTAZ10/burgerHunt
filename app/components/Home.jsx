@@ -13,7 +13,7 @@ export default function Home() {
 
 
   return (
-    <div  style={divStyle} className=" w-full h-screen bg-transparent">
+    <div  style={divStyle} className=" w-full h-screen ">
     
     <div className="flex flex-col text-white p-4 md:p-4 md:px-[6rem] lg:p-8 lg:px-[8rem] ">
     <div className="  flex flex-col gap-[10px] items-start mt-[6rem]  h-auto">
