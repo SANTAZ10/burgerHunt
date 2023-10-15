@@ -1,11 +1,11 @@
-import Link from "next/link";
+
 
 export default function Footer() {
   return (
-    <div className="flex flex-col bg-black text-white w-screen shrink-0 p-8 md:pb-[7rem] lg:pb-[10rem]">
+    <div className="flex flex-col bg-black text-white w-full shrink-0 p-8 md:pb-[7rem] lg:pb-[10rem]">
 
 
-    <div className="flex lg:flex-row justify-center flex-wrap gap-[3.9rem] lg:gap-[4.9rem]">
+    <div className="flex w-full lg:flex-row justify-center flex-wrap gap-[3.9rem] lg:gap-[4.9rem]">
     
       <div className="max-w-[20.8rem] gap-[1rem] md:gap-[1.87rem] flex flex-col items-start justify-center">
         <h1 className="font-Playfair text-xl  md:text-3xl font-semibold leading-normal">
